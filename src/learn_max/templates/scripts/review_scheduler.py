@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Calculate and manage spaced repetition review schedule based on FASTER framework.
+Calculate and manage spaced repetition review schedule based on LearnMax framework.
 """
 
 import json
@@ -37,7 +37,7 @@ def add_macos_reminder(concept: str, topic_slug: str, review_date: datetime) -> 
         # Create AppleScript to add reminder
         applescript = f'''
         tell application "Reminders"
-            tell list "Learn FASTER"
+            tell list "LearnMax"
                 make new reminder with properties {{name:"Review: {concept} ({topic_slug})", due date:date "{reminder_date}", body:"Time to review '{concept}' from your {topic_slug} learning. Run /review in Claude Code."}}
             end tell
         end tell
@@ -57,7 +57,7 @@ def add_macos_reminder(concept: str, topic_slug: str, review_date: datetime) -> 
         try:
             create_list_script = '''
             tell application "Reminders"
-                make new list with properties {name:"Learn FASTER"}
+                make new list with properties {name:"LearnMax"}
             end tell
             '''
             subprocess.run(["osascript", "-e", create_list_script], check=True, capture_output=True)

@@ -1,6 +1,6 @@
-# Contributing to Learn FASTER
+# Contributing to LearnMax
 
-Thank you for your interest in contributing to Learn FASTER!
+Thank you for your interest in contributing to LearnMax!
 
 ## Conventional Commits
 

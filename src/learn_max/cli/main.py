@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Learn FASTER CLI - One-time installer for Claude Code learning system.
+LearnMax CLI - One-time installer for Claude Code learning system.
 
 Usage:
     uvx learn-max init
@@ -81,7 +81,7 @@ def create_or_update_settings(claude_dir: Path) -> None:
     """Create or update .claude/settings.local.json."""
     settings_file = claude_dir / "settings.local.json"
 
-    # Default settings for Learn FASTER
+    # Default settings for LearnMax
     default_settings = {
         "permissions": {
             "allow": [
@@ -102,7 +102,7 @@ def create_or_update_settings(claude_dir: Path) -> None:
             ]
         },
         "companyAnnouncements": [
-            "🚀 FASTER 学习系统已启动！输入 /learn \"主题\" 开始学习",
+            "🚀 LearnMax 学习系统已启动！输入 /learn \"主题\" 开始学习",
         ]
     }
 
@@ -161,14 +161,14 @@ def check_initialization() -> bool:
 
 
 def init_project() -> None:
-    """Initialize Learn FASTER in the current project."""
+    """Initialize LearnMax in the current project."""
     
 
     cwd = Path.cwd()
     templates_dir = get_templates_dir()
 
     print(BANNER)
-    print_header("\n正在当前项目中初始化 FASTER 学习系统...\n")
+    print_header("\n正在当前项目中初始化 LearnMax 学习系统...\n")
 
     # Ask for learning mode selection
     
@@ -333,7 +333,7 @@ def launch_coach(auto_review: bool = False) -> None:
 
     # Launch Claude Code with the system prompt
     print_info("正在以学习教练模式启动 Claude Code...")
-    print_dim("（使用 FASTER 框架系统提示）\n")
+    print_dim("（使用 LearnMax 框架系统提示）\n")
 
     # Build command with optional /review prefix
     cmd = ["claude", "--system-prompt", system_prompt]
@@ -363,7 +363,7 @@ def main() -> None:
             print(f"learn-max version {__version__}")
             return
         elif command in ["help", "--help", "-h"]:
-            print("Learn FASTER - 使用 FASTER 框架加速学习\n")
+            print("LearnMax - 使用 LearnMax 框架加速学习\n")
             print("用法：")
             print("  learn-max           自动初始化并以教练模式启动 Claude Code")
             print("  learn-max init      强制重新初始化")
@@ -382,7 +382,7 @@ def main() -> None:
         print()
         init_project()
         print()
-        print_header("正在使用 FASTER 框架启动 Claude Code...")
+        print_header("正在使用 LearnMax 框架启动 Claude Code...")
         print()
         launch_coach(auto_review=False)
     else:

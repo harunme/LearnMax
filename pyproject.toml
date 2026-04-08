@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "learn-max"
 version = "1.2.0"
-description = "Learn FASTER: Accelerate learning with spaced repetition, active practice, and teaching-based retention"
+description = "LearnMax: Accelerate learning with spaced repetition, active practice, and teaching-based retention"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [

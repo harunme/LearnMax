@@ -1,4 +1,4 @@
-# Learn FASTER
+# LearnMax
 
 [![Python 版本](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![许可证：MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -8,7 +8,7 @@
 
 **专为 [Claude Code](https://claude.com/claude-code) 构建** - 将 AI 教练直接集成到你的开发环境中。
 
-## 为什么使用 FASTER？
+## 为什么使用 LearnMax？
 
 使用科学支持的学习原则掌握任何技术技能：
 
@@ -17,15 +17,6 @@
 - **四种学习模式** - 选择均衡、考试准备、理论专注或实践模式
 - **主动练习** - 自动生成的练习和项目
 - **进度追踪** - 可视化你的学习旅程
-
-## FASTER 框架
-
-- **F**orget（遗忘）：初学者心态 - 以新鲜的视角对待主题
-- **A**ct（行动）：做中学 - 动手练习优于被动阅读
-- **S**tate（状态）：优化专注 - 创造理想的学习条件
-- **T**each（教授）：讲解保持 - 教学强化理解
-- **E**nter（进入）：持续会话 - 定期练习建立动力
-- **R**eview（复习）：间隔重复 - 以间隔复习以获得长期保持
 
 ## 安装
 
@@ -50,7 +41,7 @@ uv tool install learn-max --from git+https://github.com/harunme/LearnMax.git
 learn-max
 ```
 
-这将在首次运行时自动初始化，并启动带有 FASTER 教练模式的 Claude Code。
+这将在首次运行时自动初始化，并启动带有 LearnMax 教练模式的 Claude Code。
 
 ### 选项 2：一次性使用
 
@@ -80,7 +71,7 @@ your-project/
 │   │   ├── log_progress.py
 │   │   ├── review_scheduler.py
 │   │   └── generate_syllabus.py
-│   └── references/faster_framework.md
+│   └── references/LearnMax_framework.md
 └── CLAUDE.md
 ```
 
@@ -102,7 +93,7 @@ your-project/
    首次运行将：
    - 提示你选择学习模式
    - 初始化项目结构
-   - 启动带有 FASTER 教练功能的 Claude Code
+   - 启动带有 LearnMax 教练功能的 Claude Code
 
 3. **开始学习**
 
@@ -112,40 +103,11 @@ your-project/
 
    AI 教练将生成个性化大纲并引导你的学习会话。
 
-## 演示：讲解实践
-
-FASTER 中的"T"——教学保持——是关键差异化因素。以下是它的工作方式：
-
-```bash
-mkdir learn-go && cd learn-go
-learn-max                    # 选择"均衡模式"
-/learn "Go 错误处理"          # 在 Claude Code 中
-```
-
-```
-教练：你刚学了错误包装。准备好讲解回去吗？
-       ┌ 讲解
-       │ ● 好的，我来讲解
-       │ ○ 需要先复习
-       │ ○ 还不确定
-       └
-
-你：   所以当你用 fmt.Errorf 和 %w 包装错误时，你添加了
-       像"打开配置失败"这样的上下文，同时保留了
-       原始错误。然后 errors.Is 仍然可以匹配根本原因。
-
-教练：✅ 解释得太好了！你抓住了关键——包装的错误
-       保留了链以便检查。将"错误包装"添加到
-       你的复习计划。第一次复习明天。
-```
-
-**为什么有效：** 用你自己的话解释概念会强制主动回忆——被证明比被动阅读提高 2-3 倍保持率。教练不会只告诉你答案；它会引导你自己构建理解。
-
 ## 使用方法
 
 ### CLI 命令
 
-- `learn-max` - 启动带有 FASTER 教练的 Claude Code（首次运行时自动初始化）
+- `learn-max` - 启动带有 LearnMax 教练的 Claude Code（首次运行时自动初始化）
 - `learn-max init` - 强制重新初始化或切换学习模式
 - `learn-max version` - 显示当前版本
 
@@ -186,7 +148,7 @@ uv sync
 
 ## 使用场景
 
-Learn FASTER 非常适合：
+LearnMax 非常适合：
 
 - 学习新的编程语言（Go、Rust、Python、TypeScript 等）
 - 准备技术认证和考试

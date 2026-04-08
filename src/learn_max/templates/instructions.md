@@ -1,8 +1,8 @@
-# FASTER 学习系统 - 使用说明
+# LearnMax 学习系统 - 使用说明
 
 ## 系统概述
 
-本项目使用 FASTER 框架：
+本项目使用 LearnMax 框架：
 
 - **F**orget（遗忘）：初学者心态
 - **A**ct（行动）：动手实践
@@ -30,7 +30,7 @@ project-root/
     │   ├── review_scheduler.py
     │   └── generate_syllabus.py
     ├── references/
-    │   └── faster_framework.md
+    │   └── LearnMax_framework.md
     └── <主题-slug>/
         ├── metadata.json
         ├── syllabus.md
